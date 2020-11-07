@@ -14,12 +14,23 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Material Design',
       home: Container(
         child: Row(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
-            Container( color: Colors.blue, width: 100, height:100 ),
-            Container( color: Colors.red, width: 100, height:100 ),
-          ],
+          crossAxisAlignment: CrossAxisAlignment.center,
+          //textDirection: TextDirection.ltr,
+          textDirection: TextDirection.rtl,
 
+          // crossAxisAlignment: CrossAxisAlignment.baseline,
+          //textBaseline: TextBaseline.alphabetic,
+          //crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text(
+              'Baseline',
+              style: TextStyle(color:Colors.blue,fontSize: 50),
+            ),
+            Text(
+                'Baseline',
+                style: TextStyle(color:Colors.red,fontSize: 25)
+            ),
+          ],
         ),
       ),
     );
