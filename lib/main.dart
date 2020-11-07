@@ -17,8 +17,18 @@ class MyApp extends StatelessWidget {
           title: Text('Material Design Layout'),
         ),
         body: Center(
-          child: Text('Hello World'),
-        ),
+          child: Container(
+           color: Colors.blue,
+           width: 300.0,
+           height: 300,
+            child: Text('word'),
+            alignment: Alignment.center,
+            margin: const EdgeInsets.all(100.0)
+            //padding: const EdgeInsets.all(50.0),
+            //padding: const EdgeInsets.only(top:50.0),
+
+          )
+       ),
       ),
     );
   }
