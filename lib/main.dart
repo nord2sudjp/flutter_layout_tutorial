@@ -12,29 +12,26 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Material Design',
-      home: Container(
-        child: Center(
-          // child: Column(
-
+      home: Center(
+        child: Container(
+          color: Colors.white,
           child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
 
-            //mainAxisAlignment: MainAxisAlignment.start,
+            //mainAxisSize: MainAxisSize.max,
 
+            mainAxisAlignment: MainAxisAlignment.center,
+
+            //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
-              Column(
-                children: <Widget>[
-                  Container( color: Colors.blue, width: 100, height:100 ),
-                  Container( color: Colors.red, width: 100, height:100 ),
-                ],
-              ),
-              Column(
-                children: <Widget>[
-                  Container( color: Colors.green, width: 100, height:100 ),
-                  Container( color: Colors.orange, width: 100, height:100 ),
-                ],
-              ),           ],
+              Container( color: Colors.blue, width: 50, height:50 ),
+              Container( color: Colors.red, width: 50, height:50 ),
+              Container( color: Colors.green, width: 50, height:50 ),
+              Container( color: Colors.orange, width: 50, height:50 ),
+            ],
           ),
+
         ),
       ),
     );
