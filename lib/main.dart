@@ -12,23 +12,30 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Material Design',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Material Design Layout'),
-        ),
-        body: Center(
-          child: Container(
-           color: Colors.blue,
-           width: 300.0,
-           height: 300,
-            child: Text('word'),
-            alignment: Alignment.center,
-            margin: const EdgeInsets.all(100.0)
-            //padding: const EdgeInsets.all(50.0),
-            //padding: const EdgeInsets.only(top:50.0),
+      home: Container(
+        child: Center(
+          // child: Column(
 
-          )
-       ),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+
+            //mainAxisAlignment: MainAxisAlignment.start,
+
+            children: <Widget>[
+              Column(
+                children: <Widget>[
+                  Container( color: Colors.blue, width: 100, height:100 ),
+                  Container( color: Colors.red, width: 100, height:100 ),
+                ],
+              ),
+              Column(
+                children: <Widget>[
+                  Container( color: Colors.green, width: 100, height:100 ),
+                  Container( color: Colors.orange, width: 100, height:100 ),
+                ],
+              ),           ],
+          ),
+        ),
       ),
     );
   }
